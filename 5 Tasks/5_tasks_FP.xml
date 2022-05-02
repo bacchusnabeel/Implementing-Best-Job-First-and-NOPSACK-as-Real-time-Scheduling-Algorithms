@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<simulation duration="100000000" cycles_per_ms="1000000" etm="wcet">
+	<sched overhead="0" overhead_activate="0" overhead_terminate="0" class="simso.schedulers.FP"/>
+	<caches memory_access_time="100"/>
+	<processors>
+		<processor name="CPU 1" id="1" cl_overhead="0" cs_overhead="0" speed="1.0"/>
+	</processors>
+	<tasks>
+		<field name="priority" type="int"/>
+		<task priority="1" name="Task 1" id="1" task_type="Periodic" abort_on_miss="yes" period="32.0" activationDate="0.0" list_activation_dates="" deadline="32.0" base_cpi="1.0" instructions="0" mix="0.5" WCET="3.479288" ACET="0.0" preemption_cost="0" et_stddev="0.0"/>
+		<task priority="3" name="Task 2" id="2" task_type="Periodic" abort_on_miss="yes" period="4.0" activationDate="0.0" list_activation_dates="" deadline="4.0" base_cpi="1.0" instructions="0" mix="0.5" WCET="0.745854" ACET="0.0" preemption_cost="0" et_stddev="0.0"/>
+		<task priority="2" name="Task 3" id="3" task_type="Periodic" abort_on_miss="yes" period="96.0" activationDate="0.0" list_activation_dates="" deadline="96.0" base_cpi="1.0" instructions="0" mix="0.5" WCET="28.013937" ACET="0.0" preemption_cost="0" et_stddev="0.0"/>
+		<task priority="5" name="Task 4" id="4" task_type="Periodic" abort_on_miss="yes" period="29.0" activationDate="0.0" list_activation_dates="" deadline="29.0" base_cpi="1.0" instructions="0" mix="0.5" WCET="11.502139" ACET="0.0" preemption_cost="0" et_stddev="0.0"/>
+		<task priority="4" name="Task 5" id="5" task_type="Periodic" abort_on_miss="yes" period="75.0" activationDate="0.0" list_activation_dates="" deadline="75.0" base_cpi="1.0" instructions="0" mix="0.5" WCET="1.227849" ACET="0.0" preemption_cost="0" et_stddev="0.0"/>
+	</tasks>
+</simulation>
